@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAÍZ — Estudio de restauración</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav-hero">
+  <span class="nav-hero__logo">RAÍZ</span>
+
+  <div class="nav-hero__pill">
+    <a href="#"         class="nav-hero__link nav-hero__link--active">Inicio</a>
+    <a href="#proceso"  class="nav-hero__link">Proceso</a>
+    <a href="#cursos"   class="nav-hero__link">Cursos</a>
+    <a href="#proyectos"class="nav-hero__link">Proyectos</a>
+    <a href="#contacto" class="nav-hero__link">Contacto</a>
+  </div>
+
+  <a href="#contacto" class="nav-hero__cta">Escribinos</a>
+</nav>
+
+<section class="hero-raiz" aria-label="Presentación principal">
+
+  <!-- Capa 1: imagen base — silla restaurada (el "después") -->
+  <div class="hero-raiz__base"></div>
+
+  <!-- Capa 2: imagen reveal — silla sin restaurar (el "antes") -->
+  <div class="hero-raiz__reveal" id="heroReveal"></div>
+
+  <!-- Canvas oculto para generar la máscara -->
+  <canvas class="hero-raiz__canvas" id="heroCanvas"></canvas>
+
+  <!-- Capa 3: título -->
+  <div class="hero-raiz__heading">
+    <h1 class="hero-raiz__h1">
+      <span class="hero-raiz__line1">RESTAURAMOS</span>
+      <span class="hero-raiz__line2">historias</span>
+    </h1>
+  </div>
+
+  <!-- Capa 4: párrafo inferior izquierdo -->
+  <p class="hero-raiz__desc-left">
+    Estudio de restauración. Muebles con pasado,<br>rediseñados para habitar el presente.
+  </p>
+
+  <!-- Capa 5: bloque inferior derecho -->
+  <div class="hero-raiz__bottom-right">
+    <p class="hero-raiz__hint">
+      Pasá el cursor sobre la pantalla para revelar el pasado de nuestras piezas
+      y descubrir el diálogo entre el diseño original y las técnicas contemporáneas.
+    </p>
+    <a href="#proyectos" class="hero-raiz__btn">Ver Proyectos</a>
+  </div>
+
+</section>
+
+    <section class="pillars" aria-label="Pilares del estudio">
+      <div class="pillars__grid">
+
+        <article class="pillar-card">
+          <div class="pillar-card__icon" aria-hidden="true">
+            <div class="placeholder placeholder--icon" data-placeholder="Ícono: Patrimonio">
+              <span class="placeholder__label">ICO</span>
+            </div>
+          </div>
+          <h2 class="pillar-card__title">Patrimonio</h2>
+          <p class="pillar-card__desc">Conservamos la esencia y el valor histórico de cada pieza.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__icon" aria-hidden="true">
+            <div class="placeholder placeholder--icon" data-placeholder="Ícono: Restauración">
+              <span class="placeholder__label">ICO</span>
+            </div>
+          </div>
+          <h2 class="pillar-card__title">Restauración</h2>
+          <p class="pillar-card__desc">Recuperamos estructuras y materiales originales.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__icon" aria-hidden="true">
+            <div class="placeholder placeholder--icon" data-placeholder="Ícono: Rediseño">
+              <span class="placeholder__label">ICO</span>
+            </div>
+          </div>
+          <h2 class="pillar-card__title">Rediseño</h2>
+          <p class="pillar-card__desc">Incorporamos acabados contemporáneos y nuevas posibilidades.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-card__icon" aria-hidden="true">
+            <div class="placeholder placeholder--icon" data-placeholder="Ícono: Sostenibilidad">
+              <span class="placeholder__label">ICO</span>
+            </div>
+          </div>
+          <h2 class="pillar-card__title">Sostenibilidad</h2>
+          <p class="pillar-card__desc">Extender la vida útil de un mueble también es una forma de cuidar recursos.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="editorial" id="proceso" aria-label="Nuestra filosofía de trabajo">
+      <div class="editorial__inner">
+
+        <div class="editorial__media">
+          <div class="placeholder placeholder--editorial" data-placeholder="Editorial: Fotografía de proceso de restauración — 800×1000px" aria-hidden="true">
+            <span class="placeholder__label">IMG — Editorial · 800×1000</span>
+          </div>
+        </div>
+
+        <div class="editorial__content">
+          <p class="editorial__eyebrow">Nuestra mirada</p>
+          <h2 class="editorial__title">Cada mueble tiene algo que contar.</h2>
+          <p class="editorial__body">
+            En RAÍZ entendemos la restauración como un diálogo entre pasado y presente. 
+            Analizamos cada pieza, respetamos su historia y la transformamos para que 
+            vuelva a ocupar un lugar en la vida cotidiana.
+          </p>
+          <a href="#proceso" class="btn btn--primary">Conocer nuestro proceso</a>
+        </div>
+
+      </div>
+    </section>
+
+
+<section class="services" aria-label="Servicios de restauración">
+  <div class="services__inner">
+
+    <header class="services__header">
+      <p class="services__eyebrow">Servicios</p>
+      <h2 class="services__title">Nuestros servicios</h2>
+    </header>
+
+    <div class="services__accordion">
+
+      <!-- Panel 01 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/restauracion.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Restauración Integral</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">01</span>
+          <h3 class="service-panel__title">Restauración<br>Integral</h3>
+          <p class="service-panel__desc">
+            Intervención completa de estructura, superficie y acabado. 
+            Devolvemos la pieza a su estado original respetando su historia 
+            y carácter únicos.
+          </p>
+          <span class="service-panel__tag">Más solicitado</span>
+        </div>
+      </article>
+
+      <!-- Panel 02 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/tapizeria.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Tapizado</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">02</span>
+          <h3 class="service-panel__title">Tapizado</h3>
+          <p class="service-panel__desc">
+            Renovamos rellenos, muelles y telas con materiales de alta 
+            durabilidad. Técnica tradicional combinada con acabados 
+            contemporáneos.
+          </p>
+          <span class="service-panel__tag">Butacas · Sillas · Sofás</span>
+        </div>
+      </article>
+
+      <!-- Panel 03 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/encolado.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Encolado Estructural</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">03</span>
+          <h3 class="service-panel__title">Encolado<br>Estructural</h3>
+          <p class="service-panel__desc">
+            Consolidamos uniones, encastres y fracturas con colas de 
+            carpintería de alta resistencia para devolver solidez y 
+            estabilidad a cada pieza.
+          </p>
+          <span class="service-panel__tag">Estructuras · Encastres</span>
+        </div>
+      </article>
+
+      <!-- Panel 04 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/lavado.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Lavado de Madera</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">04</span>
+          <h3 class="service-panel__title">Lavado<br>de Madera</h3>
+          <p class="service-panel__desc">
+            Limpieza profunda y decapado de barnices y pinturas antiguas 
+            para revelar la madera original y prepararla para un nuevo 
+            acabado.
+          </p>
+          <span class="service-panel__tag">Decapado · Limpieza</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="courses" id="cursos" aria-label="Nuestros cursos">
+  <div class="courses__inner">
+    
+    <header class="courses__header">
+      <p class="courses__eyebrow">Formación</p>
+      <h2 class="courses__title" style="color: var(--color-surface); font-family: var(--font-display); font-size: var(--text-xl); text-align: center; margin-bottom: var(--space-12);">Nuestros Cursos</h2>
+    </header>
+
+    <div class="courses__carousel-container">
+      
+      <button class="courses__nav-btn courses__nav-btn--prev" id="coursePrev" aria-label="Tarjeta anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <div class="courses__wrapper">
+
+        <article class="course-card is-left" data-index="0">
+          <div class="course-card__badge">
+            <span class="course-card__number">01</span>
+          </div>
+          <div class="course-card__media">
+            <img src="assets/images/curso1.jpg" alt="Curso de Restauración Integral" loading="lazy">
+          </div>
+          <div class="course-card__content">
+            <h3 class="course-card__title">Restauración Integral</h3>
+            <p class="course-card__desc">Aprendé técnicas tradicionales de ebanistería, tratamiento de maderas y acabados clásicos desde cero.</p>
+          </div>
+        </article>
+
+        <article class="course-card is-active" data-index="1">
+          <div class="course-card__badge">
+            <span class="course-card__number">02</span>
+          </div>
+          <div class="course-card__media">
+            <img src="assets/images/curso2.jpg" alt="Curso de Tapizado Contemporáneo" loading="lazy">
+          </div>
+          <div class="course-card__content">
+            <h3 class="course-card__title">Tapizado Técnico</h3>
+            <p class="course-card__desc">Domina el uso de cinchas, resortes y espumas modernas para revivir sillas, butacas y sillones de diseño.</p>
+          </div>
+        </article>
+
+        <article class="course-card is-right" data-index="2">
+          <div class="course-card__badge">
+            <span class="course-card__number">03</span>
+          </div>
+          <div class="course-card__media">
+            <img src="assets/images/curso3.jpg" alt="Curso de Acabados Especiales" loading="lazy">
+          </div>
+          <div class="course-card__content">
+            <h3 class="course-card__title">Lustre & Acabados</h3>
+            <p class="course-card__desc">Especializate en técnicas de lavado de madera, pátinas contemporáneas, protección mate y lustre a la goma laca.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="courses__nav-btn courses__nav-btn--next" id="courseNext" aria-label="Siguiente tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+    <section class="quote" aria-label="Frase institucional">
+      <div class="quote__inner">
+        <blockquote class="quote__text">
+          No restauramos muebles. Restauramos historias para que vuelvan a formar parte del presente.
+        </blockquote>
+        <cite class="quote__attribution">RAÍZ — Estudio de restauración</cite>
+      </div>
+    </section>
+
+    <section class="gallery" id="proyectos" aria-label="Galería de proyectos">
+  <div class="gallery__inner">
+
+    <header class="gallery__header">
+      <p class="gallery__eyebrow">Proyectos</p>
+      <h2 class="gallery__title">Intervenciones recientes.</h2>
+    </header>
+
+    <div class="gallery__grid">
+
+      <!-- Proyecto 01 — Vertical grande (izquierda, ocupa 2 filas) -->
+      <article class="gallery-item gallery-item--tall">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria1.jpg" alt="Escritorio moderno restaurado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">01</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Escritorio moderno restaurado</h3>
+          <p class="gallery-item__meta">2024 · Restauración estructural y acabado contemporáneo</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 02 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria2.jpg" alt="Silla Thonet N°14" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">02</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Silla Thonet N°14</h3>
+          <p class="gallery-item__meta">2025 · Reposición de encastres y tapizado de cuero</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 03 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria3.jpg" alt="Vajillero Art Déco restaurado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">03</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Vajillero Art Déco</h3>
+          <p class="gallery-item__meta">2026 · Restauración de marquetería y herrajes</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 04 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria4.jpg" alt="Silla de diseño restaurada" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">04</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Silla de diseño escandinava</h3>
+          <p class="gallery-item__meta">2023 · Recuperación de estructura y retapizado</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 05 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria6.jpg" alt="Mesa de diseño restaurada" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">05</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Mesa de diseño</h3>
+          <p class="gallery-item__meta">2026 · diseño a medida</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 06 — Banner ancho (ocupa toda la fila) -->
+      <article class="gallery-item gallery-item--wide">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria5.jpg" alt="Sillon de cuero retapizado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">06</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">sillon de cuero</h3>
+          <p class="gallery-item__meta">2026 · Restauración completa y cambio de tapizado</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="cta-final" id="contacto" aria-label="Llamada a la acción">
+      <div class="cta-final__inner">
+        <p class="cta-final__eyebrow">Trabajemos juntos</p>
+        <h2 class="cta-final__title">¿Tenés un mueble que merece una segunda vida?</h2>
+        <a href="mailto:hola@raiz.studio" class="btn btn--primary btn--large">Contactanos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <p class="footer__logo">RAÍZ</p>
+        <p class="footer__tagline">Estudio de restauración integral de muebles.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Estudio</p>
+          <a href="#proceso" class="footer__nav-link">Proceso</a>
+          <a href="#proyectos" class="footer__nav-link">Proyectos</a>
+          <a href="#cursos" class="footer__nav-link">Cursos</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Contacto</p>
+          <a href="mailto:hola@raiz.studio" class="footer__nav-link">hola@raiz.studio</a>
+          <a href="tel:+541100000000" class="footer__nav-link">+54 11 0000-0000</a>
+          <p class="footer__nav-link">Buenos Aires, Argentina</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Seguinos</p>
+          <a href="#" class="footer__nav-link" aria-label="Instagram de RAÍZ">Instagram</a>
+          <a href="#" class="footer__nav-link" aria-label="Pinterest de RAÍZ">Pinterest</a>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__legal">© 2024 RAÍZ. Todos los derechos reservados.</p>
+      <p class="footer__credit">Diseño web — Proyecto universitario</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
